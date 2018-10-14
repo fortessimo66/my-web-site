@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico/coadingbhin.ico">
+    <title>HTML</title>
+    <style>
+      body {
+        background-color: #D9E5FF;
+      }
+      a {
+        text-decoration:none;
+        color:blue;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      h3 {
+        color: yellow;
+        text-align: center;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      h2 {
+        color: yellow;
+      }
+
+      h6 {
+        color: black;
+        text-align: right;
+      }
+
+      p {
+        color: red;
+        font-family: verdana;
+        font-size: 20px;
+      }
+      
+      li{
+        list-style-type: none;
+      }
+      
+      #ad{
+        color: yellow;
+        text-align: center;
+      }
+      
+      #ma{
+        display: inline-block;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+      }
+      
+      #ma:link    { text-decoration:none; color:gray }
+      #ma:visited { text-decoration:underline; color:gray }
+      #ma:hover{ 
+        color: gray;
+        -webkit-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -o-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5); 
+      }
+      #ma:active  { text-decoration:underline; color:gray }
+      
+      #disp li{
+        display: inline-block;
+        text-align: center;
+      }
+      
+      a:link    { text-decoration:none; color:rgb(255, 70, 70) }
+      a:visited { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:hover   { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:active  { text-decoration:underline; color:rgb(255, 70, 70) }
+      
+      #h21{
+        text-align: center;
+        color: black;
+        margin: 0px;
+      }
+      
+      #disp{
+        margin: 0px;
+      }
+      
+      #sec{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" style="background-color:white;height:auto;width:auto;">
+      <h2>html이란?</h2>
+        <p>html은 <strong>h</strong>yper<strong>t</strong>ext <strong>m</strong>arkup <strong>l</strong>anguge의 약자이다. 발음은 하이퍼 텍스트 마크업 랭귀지이고 웹서버의 기초이다. 즉 웹서버는 html로 시작된다는 얘기이다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.</p>
+      <h2>html의 기초, 웹서버</h2>
+        <p>html은 웹서버의 기초면서 기본 언어라고 말했었다. 그럼 웹서버는 무엇인가? 웹 서버(Web Server)는 HTTP를 통해 웹 브라우저에서 요청하는 HTML 문서나 오브젝트(이미지 파일 등)을 전송해주는 서비스 프로그램을 말한다. 간단하다.</p>
+      <h2>태그란?</h2>
+        <p>태그는 html에서 가장 기초적이고 제일 기본이 되는 것이라고 할 수 있다. 태그(tag)는 어떤 정보에 메타데이터로 부여된 키워드 또는 분류이다. 일반적인 분류 체계와는 다른 어느 하나의 정보에는 여러 개의 태그가 붙어 그 정보를 다양한 면에서 연관성을 보여 줄 수 있으며 이렇게 제공된 정보나 자료는 접근이 쉽게 해주어 손쉽게 그 정보를 검색하고 노출시키고 분류하거나 다른 자료와 엮어 네트워크로 만드는 일을 쉽게 해 준다. 태그는 보통 그 자료를 만든 사람이나 자료를 이해하거나 찾은 사람이 붙일 수 있다. 그래서 태그는 정식의 분류의 용어와 체계를 가지지 않고 비교적 자유로운 형태나 주관적인 관점에서 기록될 수 있다. 이러한 특징 때문에 태그는 동적이고 유연한 맥락적 메타데이터 정보로 날짜, 시간, 제목 같은 메타데이터 요소들과는 구분된다. 태그로 쓰인 키워드는 그 본문 안의 정보에는 기록되지 않을 수 있으며 음악, 그림과 같이 문자로 그 내용이 기록되지 않아 검색이 어려운 인터넷의 정보 객체들도 문자를 입력함으로써 검색할 수 있게 한다. 보통 태그는 한 낱말로 많이 이뤄져 있지만, 여러 개의 낱말이 하나의 개념을 나타내어 입력되기도 한다. 특히 방대한 정보가 생성, 교환, 공유되는 인터넷에서는 어떤 데이터를 찾기 위해 태그를 사용함으로써 원하는 정보에 매우 쉽게 접근할 수 있게 하는 검색성을 갖게 한다.</p>
+      <h2>html 언어의 기초적인 태그들.</h2>
+        <p>보통 태그들은 &lt;p> 이런 식으로 이루어져 있다. 종류는 30가지를 훨신 넘는다. 다 설명해줄수는 없다. 너무많아서...</p>
+      <h2>라이브러리</h2>
+        <p>라이브러리란 우리말로 도서관이란 뜻으로 말그대로 클래스마다 같은 값을 가질때 코드낭비고 그러는걸 방지하기 위해서 라이브러리가 있는거고 라이브러리는 도서관처럼 정보, 코드를 보관하는 곳이다.</p>
+    </div>
+    <a href="index.html"><h1 style="color:black">메인으로 가기</h1></a>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+</html>

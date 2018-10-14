@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico/coadingbhin.ico">
+    <title>아두이노</title>
+    <style>
+      body {
+        background-color: #D9E5FF;
+      }
+      a {
+        text-decoration:none;
+        color:blue;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      h3 {
+        color: yellow;
+        text-align: center;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      h2 {
+        color: yellow;
+      }
+
+      h6 {
+        color: black;
+        text-align: right;
+      }
+
+      p {
+        color: black;
+        font-family: verdana;
+        font-size: 20px;
+      }
+      
+      #ad{
+        color: yellow;
+        text-align: center;
+      }
+
+      li{
+        list-style-type: none;
+      }
+      
+      #ma{
+        display: inline-block;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+      }
+      
+      #ma:link    { text-decoration:none; color:gray }
+      #ma:visited { text-decoration:underline; color:gray }
+      #ma:hover{ 
+        color: gray;
+        -webkit-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -o-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5); 
+      }
+      #ma:active  { text-decoration:underline; color:gray }
+      
+      #disp li{
+        display: inline-block;
+        text-align: center;
+      }
+      
+      a:link    { text-decoration:none; color:rgb(255, 70, 70) }
+      a:visited { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:hover   { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:active  { text-decoration:underline; color:rgb(255, 70, 70) }
+      
+      #h21{
+        text-align: center;
+        color: black;
+        margin: 0px;
+      }
+      
+      #disp{
+        margin: 0px;
+      }
+      
+      #sec{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" style="background-color:white;height:auto;width:auto;">
+      <h1 style="color:black">아두이노란?</h1>
+        <p>코딩교육을 목표로 해서 만들어진 비효율적인 하드웨어다. C++, C로 코딩을 할 수 있고 <strong>기초코딩</strong>을 위한 하드웨어다. 하지만 크기도 너무 크고 불편하고 286컴퓨터 cpu밖에 안돼니 컴퓨터, 로봇같은건 절대로 만들수 없다. 그리고 아두이노(이탈리아어: Arduino 아르두이노)는 오픈 소스를 기반으로 한 단일 보드 마이크로컨트롤러로 완성된 보드(상품)와 관련 개발 도구 및 환경을 말한다. 2005년 이탈리아의 IDII에서 하드웨어에 익숙지 않은 학생들이 자신들의 디자인 작품을 손쉽게 제어할 수 있게 하려고 고안된 아두이노는 처음에 AVR을 기반으로 만들어졌으며, 아트멜 AVR 계열의 보드가 현재 가장 많이 판매되고 있다. ARM 계열의 Cortex-M0(Arduino M0 Pro)과 Cortex-M3(Arduino Due)를 이용한 제품도 존재한다. 아두이노는 다수의 스위치나 센서로부터 값을 받아들여, LED나 모터와 같은 외부 전자 장치들을 통제함으로써 환경과 상호작용이 가능한 물건을 만들어 낼 수 있다. 임베디드 시스템 중의 하나로 쉽게 개발할 수 있는 환경을 이용하여, 장치를 제어할 수 있다. 아두이노 통합 개발 환경(IDE)을 제공하며, 소프트웨어 개발과 실행코드 업로드도 제공한다. 또한 어도비 플래시, 프로세싱, Max/MSP와 같은 소프트웨어와 연동할 수 있다. 아두이노의 가장 큰 장점은 마이크로컨트롤러를 쉽게 동작시킬 수 있다는 것이다. 일반적으로 AVR 프로그래밍이 AVRStudio(Atmel Studio[6]로 변경, ARM 도구 추가됨)와 WinAVR(avr-gcc)의 결합으로 컴파일하거나 IAR E.W.나 코드비전(CodeVision)등으로 개발하여, 별도의 ISP 장치를 통해 업로드를 해야하는 번거로운 과정을 거쳐야 한다. 이에 비해 아두이노는 컴파일된 펌웨어를 USB를 통해 쉽게 업로드 할 수 있다. 또한, 아두이노는 다른 모듈에 비해 비교적 저렴하고, 윈도를 비롯해 맥 OS X, 리눅스와 같은 여러 OS를 모두 지원한다. 아두이노 보드의 회로도가 CC 에 따라 공개되어 있으므로, 누구나 직접 보드를 만들고 수정할 수 있다. 아두이노가 인기를 끌면서 이를 비즈니스에 활용하는 기업들도 늘어나고 있다. 장난감 회사 레고는 자사의 로봇 장난감과 아두이노를 활용한 로봇 교육 프로그램을 학생과 성인을 대상으로 북미 지역에서 운영하고 있다. 자동차회사 포드는 아두이노를 이용해 차량용 하드웨어와 소프트웨어를 만들어 차량과 상호작용을 할 수 있는 오픈XC라는 프로그램을 선보이기도 했다.</p>
+      <h1 style="color:black">아두이노를 사용하는곳</h1>
+        <p>아두이노를 사용하는곳은 교육, 재미, 취미, 등등등 경우로 사용한다. 대부분 실전에 쓰이는 경우는 거의 없다고 봐야 된다. 하지만 꽤 많은 하드웨어랑 연결이 되고 종류도 엄청나게 많이 있어 아직 쓰는데는 엄청 많다. 하지만 블루투스, 와이파이 같은 것은 따로 사거나 쉴드를 껴야 되고 그런 경우로 인해서 아직 비활성화 된 것을 알 수가 있다. 하지만 64비트 CPU를 가진 아두이노도 나오고 있고 아직 가능성은 무한한 하드웨어이다.</p>
+      <h1 style="color:black">아두이노 회로</h1>
+        <p>아두이노는 회로를 통해서 바깥으로 출력할 수 있는 장치입니다.. 그래서 블루투스도 연결하고......뭐 어쩌구 저쩌구 해가주고 회로를 완성해서 실행하면 전기가 회로를 통해 갑니다. 의견 한번좀......!!! 아! 납땜질을 해야되냐고요? 아니죠. 아두이노의 회로는 브레드보드라는 판에다가 심을 꼿기만 하면 되요. 아주 간단해요. 자, 또 의견 있으신분?........!!! 네, 아주좋아요. 아두이노는 pc와는 떨어져 있는 하드웨어인데 어떻게 주고받고를 할수 있냐고요? 간단해요. 아두이노를 사면<small>(약 3 ~ 5만원 사이)</small>usb를 연결할수 있는 포트가 함께 오는데 그걸 usb 커넥터에다가 연결하면 됩니다.</p>
+      <h1>아두이노 프로젝트</h1>
+      <p>아두이노의 피에조 부저로 음악을 내가 직접 만들어 보았다. 당신도 해보세요.</p>
+      <p>헤더 파일 <a href="codfiles/pitches.h" download>코드보기</a></p>
+      <p>소스 코드 <a href="codfiles/toneMelody.ino" download>코드보기</a></p>
+    </div>
+    <a href="index.html"><h1 style="color:black">메인으로 가기</h1></a>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+</html>

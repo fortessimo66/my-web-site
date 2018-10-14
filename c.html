@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico/coadingbhin.ico">
+    <title>C언어</title>
+    <style>
+      body {
+        background-color: #D9E5FF;
+      }
+      a {
+        text-decoration:none;
+        color:blue;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      h3 {
+        color: yellow;
+        text-align: center;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      h2 {
+        color: yellow;
+      }
+
+      h6 {
+        color: black;
+        text-align: right;
+      }
+
+      p {
+        color: black;
+        font-family: verdana;
+        font-size: 20px;
+      }
+      div {
+        border:1px;
+      }
+      
+      li{
+        list-style-type: none;
+      }
+      
+      #ad{
+        color: yellow;
+        text-align: center;
+      }
+      
+      #ma{
+        display: inline-block;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+      }
+      
+      #ma:link    { text-decoration:none; color:gray }
+      #ma:visited { text-decoration:underline; color:gray }
+      #ma:hover{ 
+        color: gray;
+        -webkit-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -o-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5); 
+      }
+      
+      #disp li{
+        display: inline-block;
+        text-align: center;
+      }
+      
+      a:link    { text-decoration:none; color:rgb(255, 70, 70) }
+      a:visited { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:hover   { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:active  { text-decoration:underline; color:rgb(255, 70, 70) }
+      
+      #h21{
+        text-align: center;
+        color: black;
+        margin: 0px;
+      }
+      
+      #disp{
+        margin: 0px;
+      }
+      
+      #sec{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" style="background-color:white;height:auto;width:auto;">
+      <h1 style="color:black">C언어란?</h1>
+        <p>C는 1972년 켄 톰슨과 데니스 리치가 벨 연구소에서 일할 당시 새로 개발된 유닉스 운영 체제에서 사용하기 위해 개발한 프로그래밍 언어이다. 켄 톰슨은 BCPL언어를 필요에 맞추어 개조해서 "B"언어(언어를 개발한 벨 연구소의 B를 따서)라 명명했고, 데니스 리치가 이것을 개선하여 C 언어가 탄생했다. 유닉스 시스템의 바탕 프로그램은 모두 C로 작성되었고, 수많은 운영 체제의 커널 또한 C로 만들어졌다. 오늘날 많이 쓰이는 C++는 C에서 객체 지향형 언어로 발전된 것이다. 또 다른 다양한 최신 언어들도 그 뿌리를 C에 두고 있다.</p>
+      <h1 style="color:black">C언어의 사용</h1>
+        <p>C는 실질적으로 모든 컴퓨터 시스템에서 사용할 수 있는 프로그래밍 언어이다. 예를 들어 BASIC 등과는 달리 다양한 플랫폼에서 ANSI C의 정의에 따르는 비교적 동일한 구현이 가능하다. 모든 C 시스템에는 정규화된 표준 C 라이브러리가 존재한다. 이런 이유와 생성된 프로그램의 높은 성능이 아직까지도 C 언어가 사랑받는 이유 중 하나이다. 그러나 C 언어가 기술적으로 보아 현재 기술 수준에 부합하지 않는다는 의견이 있으며, C를 "이식가능한 고급 어셈블리어" 정도로 낮추어 부르기도 한다. 이는 반면 오늘날의 널리 쓰이는 거의 모든 운영 체제 커널이 C를 이용해 구현된 이유이기도 하다. 이처럼 C는 시스템 프로그램 개발에 매우 적합하지만, 응용 프로그램 개발에도 많이 쓰이기도 한다. 최근 CT를 이용한 소프트웨어 교육에 대한 중요성이 강조되면서 점차 C 언어 교육에 대한 관심이 뜨거워지고있다.</p>
+      <h1 style="color:black">C언어 예제</h1>
+        <p>hello World 예제</p>
+        <div style="background-color:yellow;width:500px">
+          <p>#include &lt;stdio.h></p>
+          <p>void main(void) {</p>
+  	         <p>printf("hello?");</p>
+  	         <p>return 0;</p>
+          <p>}</p>
+        </div>
+        <p>입력 예제</p>
+        <div style="background-color:yellow;width:500px">
+          <p>#include &lt;stdio.h></p>
+          <p>void main(void) {</p>
+            <p>int num;</p>
+            <p>printf("정수를 입력하세요.\n");</p>
+            <p>scanf("%d", &num);</p>
+            <p>printf("%d가 입력돼었습니다.\n, num")</p>
+          <p>}</p>
+        </div>
+    </div>
+    <a href="index.html"><h1 style="color:black">메인으로 가기</h1></a>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+</html>
