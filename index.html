@@ -1,328 +1,168 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
   <head>
     <link rel="shortcut icon" type="image/x-icon" href="images/ico/coadingbhin.ico">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>코딩빈의 첫번째 웹사이트!!</title>
+    <link type="text/css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #D9E5FF;
+      }
+      a {
+        text-decoration:none;
+        color:blue;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
 
-    <title>코딩빈의 사이트</title>
+      h2 {
+        color: yellow;
+      }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      h6 {
+        color: black;
+        text-align: right;
+      }
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+      p {
+        color: white;
+        font-family: verdana;
+        font-size: 20px;
+      }
+      
+      li{
+        list-style-type: none;
+      }
+      
+      #ad{
+        color: yellow;
+        text-align: center;
+      }
+      
+      #ma{
+        display: inline-block;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s;
+      }
+      
+      #ma:link    { text-decoration:none; color:gray }
+      #ma:visited { text-decoration:underline; color:gray }
+      #ma:hover{ 
+        color: gray;
+        -webkit-transform: scale(1.5,1.5);
+        -moz-transform: scale(1.5,1.5);
+        -o-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5); 
+      }
+      #ma:active  { text-decoration:underline; color:gray }
+      
+      #disp li{
+        display: inline-block;
+        text-align: center;
+      }
+      
+      a:link    { text-decoration:none; color:rgb(255, 70, 70) }
+      a:visited { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:hover   { text-decoration:underline; color:rgb(255, 70, 70) }
+      a:active  { text-decoration:underline; color:rgb(255, 70, 70) }
+      
+      #h21{
+        text-align: center;
+        color: black;
+        margin: 0px;
+      }
+      
+      #disp{
+        margin: 0px;
+      }
+      
+      #sec{
+        text-align: center;
+      }
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+      #section{
+        text-align: center;
+        background-color: gray;
+        background:url('images/jpg/고양이01.jpg');
+      }
 
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
+      #source{
+        background-color: white;
+      }
+    </style>
   </head>
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">코딩빈의 웹사이트</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">출처</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">프로젝트</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">내 이메일</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#foot">댓글</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>코딩빈의 웹사이트</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5"><a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8" target="blank_">프로그래머</a>가 되고싶은 <a href="https://www.youtube.com/channel/UC6mexs7fRPOOXBdngru1gfw?view_as=public" target="blank_">코딩빈</a>의 웹사이트</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">시작해 볼까요?</a>
-          </div>
-        </div>
-      </div>
+  <body>
+    <header style="background-color:#0099cc;margin:auto;padding-top: 17.978px;margin-top: 24.978px;">
+      <a href="index.html"><h1>나만의 코딩 사이트</h1></a>
+      <h2 id="ad"><a href="https://www.google.co.kr/search?q=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8&rlz=1C1ZKTG_koKR742KR769&oq=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8&aqs=chrome..69i57.7711j0j8&sourceid=chrome&ie=UTF-8" target="_blank">프로그래머</a>가 되고싶은 <a href="https://www.youtube.com/channel/UC6mexs7fRPOOXBdngru1gfw?view_as=public">코딩빈</a>의 <a href="https://www.google.co.kr/search?rlz=1C1ZKTG_koKR742KR769&ei=FDJQWvSzN8fA0gTOyIOQBA&q=%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8&oq=%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8&gs_l=psy-ab.3..0l10.67612.71666.0.72025.10.8.0.2.2.0.139.843.0j7.7.0....0...1c.1j4.64.psy-ab..1.9.876...0i131k1.0.Cj5cyS0wqZY" target="_blank">웹사이트</a></h2>
     </header>
+    <aside style="background-color:white;height:auto;width:auto;">
+      <section id="sec">
+        <ul id="disp">
+          <li><h2 id="h21"><a id="ma" href="coading is.html">코딩이란?</a></li></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="first coading.html">코딩의 기초</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="java.html">자바</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="javascript.html">자바스크립트</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="html.html">HTML</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="python.html">파이썬</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="microbit.html">마이크로비트</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="arduino.html">아두이노</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="c.html">C언어</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="c++.html">C++</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="수학.html">수학</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="my faerit.html">내가 좋아하는것</a></h2></li>
+          <li id="ma"><h2 id="h21">|</h2></li>
+          <li><h2 id="h21"><a id="ma" href="game.html">게임</a></h2></li>
+        </ul>
+      </section>
+    </aside>
 
-    <section id="about" style="background-color:white;padding:35px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 style="color:black">이 사이트는 부트스트랩을 이용해서 만든 사이트입니다.</h2>
-            <hr class="light my-4" style="background-color:black;margin-bottom: 20px">
-            <p class="text-faded mb-4" style="color:black"><a href="https://startbootstrap.com/template-categories/all/" target="blank_">여기</a>로 가시면 다양한 소스들을 살펴볼수가 있습니다!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio" style="background-color:#f08871">보았으면 가봅시다!</a>
-          </div>
-        </div>
+    <section id="section">
+      <h1 style="color:black;">내 사이트에 온것을 환영합니다!</h1>
+      <p></p>
+      <h3>내 동영상</h3>
+      <div style="position:relative;height:0;padding-bottom:56.27%;padding-bottom: none"><iframe src="https://www.youtube.com/embed/IuKowjp72JE?list=PL5MIt-Ey162cKR5vd5Vbnv7BjuZULDu62&amp;ecver=2" style="position:absolute;width:90%;height:90%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div id="source">
+          <h1 style="color: orange">제 코드를 참조하실 분들은 여기서 소스코드를 <a href="https://github.com/fortessimo66/coadingbhin/archive/master.zip">다운로드</a>해주시기 바랍니다!</h1>
       </div>
+      
     </section>
+    
+    <div id="disqus_thread"></div>
+    <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sample-3msjfbw3jj.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div style="flex-wrap: wrap;display: flex;margin-right: 0;margin-left: 0;padding-right: 0;padding-left: 0;">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="coading is.html">
-              <img class="img-fluid" src="img/png/220CE44C592E267935.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    카테고리
-                  </div>
-                  <div class="project-name">
-                    코딩이란?
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="first coading.html">
-              <img class="img-fluid" src="img/png/코딩기초.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    카테고리
-                  </div>
-                  <div class="project-name">
-                    코딩의 기초
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="java.html">
-              <img class="img-fluid" src="img/jpg/oracle-java.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    카테고리
-                  </div>
-                  <div class="project-name">
-                    자바
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="javascript.html">
-              <img class="img-fluid" src="img/jpg/ezgif-4-d5881413689e.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    카테고리
-                  </div>
-                  <div class="project-name">
-                    자바스크립트
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="html.html">
-              <img class="img-fluid" src="img/png/html.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    HTML
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="python.html">
-              <img class="img-fluid" src="img/jpg/python.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    파이썬
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="microbit.html">
-              <img class="img-fluid" src="img/jpg/microbitlogo.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    마이크로비트
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="arduino.html">
-              <img class="img-fluid" src="img/png/arduinologo.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    아두이노
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="c.html">
-              <img class="img-fluid" src="img/jpg/c.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    C언어
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="c++.html">
-              <img class="img-fluid" src="img/jpg/c++.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    C++
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="수학.html">
-              <img class="img-fluid" src="img/jpg/math.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    수학
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6" style="text-align:center;">
-            <a class="portfolio-box" href="game.html">
-              <img class="img-fluid" src="img/png/game.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                      카테고리
-                  </div>
-                  <div class="project-name">
-                    게임
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="border-bottom:2px solid #f08871;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">이메일 주소</h2>
-            <hr class="my-4">
-            <p class="mb-5">제 이메일 주소는 이것입니다!</p>
-          </div>
-        </div>
-          <div class="col-lg-4 mr-auto text-center" style="margin-right:0; max-width: 100%;">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2" style="text-align: center;"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com" style="text-align: center;">bhinshin10@gmail.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-    <footer id="foot">
-      <div id="disqus_thread"></div>
-      <script>
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://sample-3msjfbw3jj.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-      </script>
-      <noscript>
-        Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-      </noscript>
-    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
   </body>
-
+</head>
 </html>
